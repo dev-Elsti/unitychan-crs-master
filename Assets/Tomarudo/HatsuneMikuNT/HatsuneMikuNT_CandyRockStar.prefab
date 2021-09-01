@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4625006622139945842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4483314638565873952}
+  - component: {fileID: 4182398573432711655}
+  m_Layer: 8
+  m_Name: OVR Lip Sync
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4483314638565873952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4625006622139945842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7528523850461614858}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4182398573432711655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4625006622139945842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa5cb7a870de440baadff9083be41c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7528523848898260614
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,6 +147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523848919586063}
+  - component: {fileID: 814689417}
   m_Layer: 8
   m_Name: TwinTail.D.005.L
   m_TagString: Untagged
@@ -126,6 +171,46 @@ Transform:
   m_Father: {fileID: 7528523849583858718}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814689417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523848919586062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850585857424}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523848925152077
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523848946088947}
+  - component: {fileID: 1265917029}
   m_Layer: 8
   m_Name: TwinTail.A.011.R
   m_TagString: Untagged
@@ -309,6 +395,46 @@ Transform:
   m_Father: {fileID: 7528523850176209713}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1265917029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523848946088946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849421318923}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523848951945279
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523848951945276}
+  - component: {fileID: 1196280112}
   m_Layer: 8
   m_Name: TwinTail.B.003.L
   m_TagString: Untagged
@@ -341,6 +468,46 @@ Transform:
   m_Father: {fileID: 7528523849635658823}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1196280112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523848951945279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849410100076}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523848954125639
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523848970703292}
+  - component: {fileID: 1893805408}
   m_Layer: 8
   m_Name: TwinTail.B.001.L
   m_TagString: Untagged
@@ -586,6 +754,46 @@ Transform:
   m_Father: {fileID: 7528523850332437434}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1893805408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523848970703295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849635658823}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523848981330021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849019482754}
+  - component: {fileID: 1273758077}
   m_Layer: 8
   m_Name: TwinTail.E.004.L
   m_TagString: Untagged
@@ -1043,6 +1252,46 @@ Transform:
   m_Father: {fileID: 7528523849344554930}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1273758077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849019482765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850409708291}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849031883548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849070457586}
+  - component: {fileID: 516325934}
   m_Layer: 8
   m_Name: TwinTail.A.004.R
   m_TagString: Untagged
@@ -1381,6 +1631,38 @@ Transform:
   m_Father: {fileID: 7528523850064803481}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &516325934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849070457597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850766625464}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849085294914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849085294915}
+  - component: {fileID: 470196441}
   m_Layer: 8
   m_Name: TwinTail.D.002.L
   m_TagString: Untagged
@@ -1413,6 +1696,46 @@ Transform:
   m_Father: {fileID: 7528523850923170746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470196441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849085294914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850199899982}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849091238585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849091238590}
+  - component: {fileID: 924151908}
   m_Layer: 8
   m_Name: TwinTail.A.009.R
   m_TagString: Untagged
@@ -1445,6 +1769,46 @@ Transform:
   m_Father: {fileID: 7528523849677395418}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &924151908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849091238585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850176209713}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849093586635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849122619659}
+  - component: {fileID: 799994912}
   m_Layer: 8
   m_Name: TwinTail.A.009.L
   m_TagString: Untagged
@@ -1636,6 +2001,46 @@ Transform:
   m_Father: {fileID: 7528523850039909106}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799994912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849122619658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849496970370}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849123017592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,6 +2144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849149674113}
+  - component: {fileID: 984076706}
   m_Layer: 8
   m_Name: TwinTail.E.001.L
   m_TagString: Untagged
@@ -1762,6 +2168,46 @@ Transform:
   m_Father: {fileID: 7528523850332437434}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984076706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849149674112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850375957919}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849154522002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,6 +2249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849155517244}
+  - component: {fileID: 487849829}
   m_Layer: 8
   m_Name: TwinTail.C.004.L
   m_TagString: Untagged
@@ -1826,6 +2273,46 @@ Transform:
   m_Father: {fileID: 7528523850989489038}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &487849829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849155517247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850818458617}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849166266069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,6 +2538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849206309293}
+  - component: {fileID: 1456388184}
   m_Layer: 8
   m_Name: TwinTail.C.002.L
   m_TagString: Untagged
@@ -2074,6 +2562,46 @@ Transform:
   m_Father: {fileID: 7528523850394810255}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1456388184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849206309292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850989489038}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849221146741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,6 +3542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849344554930}
+  - component: {fileID: 1757613146}
   m_Layer: 8
   m_Name: TwinTail.E.003.L
   m_TagString: Untagged
@@ -3037,6 +3566,46 @@ Transform:
   m_Father: {fileID: 7528523850375957919}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1757613146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849344554941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849019482754}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849352981211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,6 +3703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849364674035}
+  - component: {fileID: 504143820}
   m_Layer: 8
   m_Name: TwinTail.F.006.R
   m_TagString: Untagged
@@ -3157,6 +3727,46 @@ Transform:
   m_Father: {fileID: 7528523850752728220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &504143820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849364674034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850495541399}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849364960427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,6 +4309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849410100076}
+  - component: {fileID: 1051646171}
   m_Layer: 8
   m_Name: TwinTail.B.004.L
   m_TagString: Untagged
@@ -3722,6 +4333,46 @@ Transform:
   m_Father: {fileID: 7528523848951945276}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051646171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849410100079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849589656667}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849421318922
 GameObject:
   m_ObjectHideFlags: 0
@@ -3731,6 +4382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849421318923}
+  - component: {fileID: 1664832216}
   m_Layer: 8
   m_Name: TwinTail.A.012.R
   m_TagString: Untagged
@@ -3754,6 +4406,46 @@ Transform:
   m_Father: {fileID: 7528523848946088947}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1664832216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849421318922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849903446288}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849443944413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,6 +4676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849473935751}
+  - component: {fileID: 586906672}
   m_Layer: 8
   m_Name: TwinTail.B.007.L
   m_TagString: Untagged
@@ -4007,6 +4700,46 @@ Transform:
   m_Father: {fileID: 7528523849501640400}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &586906672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849473935750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849640783542}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849476904903
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,6 +5102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849496970370}
+  - component: {fileID: 1678001642}
   m_Layer: 8
   m_Name: TwinTail.A.010.L
   m_TagString: Untagged
@@ -4392,6 +5126,46 @@ Transform:
   m_Father: {fileID: 7528523849122619659}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678001642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849496970381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850384111442}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849501640403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,6 +5175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849501640400}
+  - component: {fileID: 1599917264}
   m_Layer: 8
   m_Name: TwinTail.B.006.L
   m_TagString: Untagged
@@ -4424,6 +5199,46 @@ Transform:
   m_Father: {fileID: 7528523849589656667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1599917264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849501640403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849473935751}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849506325455
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,6 +5541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849522455807}
+  - component: {fileID: 1845948789}
   m_Layer: 8
   m_Name: TwinTail.A.001.R
   m_TagString: Untagged
@@ -4749,6 +5565,38 @@ Transform:
   m_Father: {fileID: 7528523849653575871}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1845948789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849522455806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850299559299}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849528268355
 GameObject:
   m_ObjectHideFlags: 0
@@ -4976,6 +5824,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849583858718}
+  - component: {fileID: 983181240}
   m_Layer: 8
   m_Name: TwinTail.D.004.L
   m_TagString: Untagged
@@ -4999,6 +5848,46 @@ Transform:
   m_Father: {fileID: 7528523850199899982}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &983181240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849583858713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523848919586063}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849589656666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,6 +5897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849589656667}
+  - component: {fileID: 495088744}
   m_Layer: 8
   m_Name: TwinTail.B.005.L
   m_TagString: Untagged
@@ -5031,6 +5921,46 @@ Transform:
   m_Father: {fileID: 7528523849410100076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495088744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849589656666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849501640400}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849600492354
 GameObject:
   m_ObjectHideFlags: 0
@@ -5096,6 +6026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849609624253}
+  - component: {fileID: 1518994100}
   m_Layer: 8
   m_Name: TwinTail.D.008.L
   m_TagString: Untagged
@@ -5119,6 +6050,46 @@ Transform:
   m_Father: {fileID: 7528523850432031149}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1518994100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849609624252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849913632300}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849611119317
 GameObject:
   m_ObjectHideFlags: 0
@@ -5190,6 +6161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849621390415}
+  - component: {fileID: 1777198345}
   m_Layer: 8
   m_Name: TwinTail.F.004.R
   m_TagString: Untagged
@@ -5213,6 +6185,46 @@ Transform:
   m_Father: {fileID: 7528523850049308813}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1777198345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849621390414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850752728220}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849627498373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5310,6 +6322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849635658823}
+  - component: {fileID: 2119063479}
   m_Layer: 8
   m_Name: TwinTail.B.002.L
   m_TagString: Untagged
@@ -5333,6 +6346,46 @@ Transform:
   m_Father: {fileID: 7528523848970703292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119063479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849635658822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523848951945276}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849640678728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,6 +6427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849640783542}
+  - component: {fileID: 1439615041}
   m_Layer: 8
   m_Name: TwinTail.B.008.L
   m_TagString: Untagged
@@ -5397,6 +6451,46 @@ Transform:
   m_Father: {fileID: 7528523849473935751}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1439615041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849640783537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850850923868}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849641883859
 GameObject:
   m_ObjectHideFlags: 0
@@ -5646,6 +6740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849677395418}
+  - component: {fileID: 243345846}
   m_Layer: 8
   m_Name: TwinTail.A.008.R
   m_TagString: Untagged
@@ -5669,6 +6764,46 @@ Transform:
   m_Father: {fileID: 7528523850757628057}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &243345846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849677395429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849091238590}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849690340512
 GameObject:
   m_ObjectHideFlags: 0
@@ -7014,6 +8149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849855733422}
+  - component: {fileID: 1056892034}
   m_Layer: 8
   m_Name: TwinTail.F.001.L
   m_TagString: Untagged
@@ -7037,6 +8173,46 @@ Transform:
   m_Father: {fileID: 7528523850042054238}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1056892034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849855733417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850830540937}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849860434793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7531,6 +8707,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849903446288}
+  - component: {fileID: 338415965}
   m_Layer: 8
   m_Name: TwinTail.A.013.R
   m_TagString: Untagged
@@ -7554,6 +8731,46 @@ Transform:
   m_Father: {fileID: 7528523849421318923}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &338415965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849903446291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850418112791}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849904559501
 GameObject:
   m_ObjectHideFlags: 0
@@ -7916,6 +9133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523849927328343}
+  - component: {fileID: 781797814}
   m_Layer: 8
   m_Name: TwinTail.A.003.L
   m_TagString: Untagged
@@ -7939,6 +9157,38 @@ Transform:
   m_Father: {fileID: 7528523850361174324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781797814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523849927328342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850332437434}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.03
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523849930324264
 GameObject:
   m_ObjectHideFlags: 0
@@ -13310,6 +14560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850019714958}
+  - component: {fileID: 772882089}
   m_Layer: 8
   m_Name: TwinTail.F.003.L
   m_TagString: Untagged
@@ -13333,6 +14584,46 @@ Transform:
   m_Father: {fileID: 7528523850830540937}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &772882089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850019714953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850830085538}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850023482164
 GameObject:
   m_ObjectHideFlags: 0
@@ -13460,6 +14751,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850039048105}
+  - component: {fileID: 1643891629}
   m_Layer: 8
   m_Name: TwinTail.A.005.L
   m_TagString: Untagged
@@ -13483,6 +14775,38 @@ Transform:
   m_Father: {fileID: 7528523850332437434}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1643891629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850039048104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850136649433}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850039909117
 GameObject:
   m_ObjectHideFlags: 0
@@ -13492,6 +14816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850039909106}
+  - component: {fileID: 723754573}
   m_Layer: 8
   m_Name: TwinTail.A.008.L
   m_TagString: Untagged
@@ -13515,6 +14840,46 @@ Transform:
   m_Father: {fileID: 7528523850042054238}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &723754573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850039909117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849122619659}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850042054233
 GameObject:
   m_ObjectHideFlags: 0
@@ -13524,6 +14889,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850042054238}
+  - component: {fileID: 2143352707}
   m_Layer: 8
   m_Name: TwinTail.A.007.L
   m_TagString: Untagged
@@ -13548,6 +14914,46 @@ Transform:
   m_Father: {fileID: 7528523850136649433}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143352707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850042054233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850039909106}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850045080776
 GameObject:
   m_ObjectHideFlags: 0
@@ -13588,6 +14994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850047320430}
+  - component: {fileID: 1639614449}
   m_Layer: 8
   m_Name: TwinTail.F.006.L
   m_TagString: Untagged
@@ -13611,6 +15018,46 @@ Transform:
   m_Father: {fileID: 7528523850608470241}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639614449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850047320425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849825629490}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850049308812
 GameObject:
   m_ObjectHideFlags: 0
@@ -13620,6 +15067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850049308813}
+  - component: {fileID: 769404626}
   m_Layer: 8
   m_Name: TwinTail.F.003.R
   m_TagString: Untagged
@@ -13643,6 +15091,46 @@ Transform:
   m_Father: {fileID: 7528523850394063337}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769404626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850049308812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849621390415}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850050196238
 GameObject:
   m_ObjectHideFlags: 0
@@ -13858,6 +15346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850064803481}
+  - component: {fileID: 193790128}
   m_Layer: 8
   m_Name: TwinTail.A.003.R
   m_TagString: Untagged
@@ -13881,6 +15370,38 @@ Transform:
   m_Father: {fileID: 7528523850299559299}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193790128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850064803480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849070457586}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850079751163
 GameObject:
   m_ObjectHideFlags: 0
@@ -13984,6 +15505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850136649433}
+  - component: {fileID: 959305366}
   m_Layer: 8
   m_Name: TwinTail.A.006.L
   m_TagString: Untagged
@@ -14007,6 +15529,38 @@ Transform:
   m_Father: {fileID: 7528523850039048105}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &959305366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850136649432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850042054238}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850146523835
 GameObject:
   m_ObjectHideFlags: 0
@@ -14017,7 +15571,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528523850146523832}
   - component: {fileID: 7528523850146523833}
-  - component: {fileID: 7528523850146523838}
   m_Layer: 8
   m_Name: Upper Leg.R
   m_TagString: Untagged
@@ -14055,20 +15608,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.08
---- !u!136 &7528523850146523838
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528523850146523835}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.08
-  m_Height: 0.42
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.16, z: 0}
 --- !u!1 &7528523850151261712
 GameObject:
   m_ObjectHideFlags: 0
@@ -14109,6 +15648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850160772256}
+  - component: {fileID: 1187940745}
   m_Layer: 8
   m_Name: TwinTail.A.001.L
   m_TagString: Untagged
@@ -14132,6 +15672,38 @@ Transform:
   m_Father: {fileID: 7528523849653575871}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1187940745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850160772259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850361174324}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.03
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850162055185
 GameObject:
   m_ObjectHideFlags: 0
@@ -14186,6 +15758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850176209713}
+  - component: {fileID: 2113849233}
   m_Layer: 8
   m_Name: TwinTail.A.010.R
   m_TagString: Untagged
@@ -14209,6 +15782,46 @@ Transform:
   m_Father: {fileID: 7528523849091238590}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2113849233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850176209712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523848946088947}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850185809500
 GameObject:
   m_ObjectHideFlags: 0
@@ -14326,6 +15939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850199899982}
+  - component: {fileID: 1225882501}
   m_Layer: 8
   m_Name: TwinTail.D.003.L
   m_TagString: Untagged
@@ -14349,6 +15963,46 @@ Transform:
   m_Father: {fileID: 7528523849085294915}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225882501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850199899977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849583858718}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850203175632
 GameObject:
   m_ObjectHideFlags: 0
@@ -19612,7 +21266,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7528523850297448332}
   - component: {fileID: 7528523850297448335}
-  - component: {fileID: 7528523850297448333}
   m_Layer: 8
   m_Name: Upper Leg.L
   m_TagString: Untagged
@@ -19650,20 +21303,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.08
---- !u!136 &7528523850297448333
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528523850297448334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.08
-  m_Height: 0.42
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.16, z: 0}
 --- !u!1 &7528523850299559298
 GameObject:
   m_ObjectHideFlags: 0
@@ -19673,6 +21312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850299559299}
+  - component: {fileID: 389730533}
   m_Layer: 8
   m_Name: TwinTail.A.002.R
   m_TagString: Untagged
@@ -19696,6 +21336,38 @@ Transform:
   m_Father: {fileID: 7528523849522455807}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &389730533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850299559298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850064803481}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850299730275
 GameObject:
   m_ObjectHideFlags: 0
@@ -19886,6 +21558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850332437434}
+  - component: {fileID: 1453183003}
   m_Layer: 8
   m_Name: TwinTail.A.004.L
   m_TagString: Untagged
@@ -19913,6 +21586,38 @@ Transform:
   m_Father: {fileID: 7528523849927328343}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453183003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850332437061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850039048105}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850337596095
 GameObject:
   m_ObjectHideFlags: 0
@@ -20048,6 +21753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850358799956}
+  - component: {fileID: 1325440060}
   m_Layer: 8
   m_Name: TwinTail.A.013.L
   m_TagString: Untagged
@@ -20071,6 +21777,46 @@ Transform:
   m_Father: {fileID: 7528523850470585088}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1325440060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850358799959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849863517669}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850360498934
 GameObject:
   m_ObjectHideFlags: 0
@@ -20111,6 +21857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850361174324}
+  - component: {fileID: 2044179335}
   m_Layer: 8
   m_Name: TwinTail.A.002.L
   m_TagString: Untagged
@@ -20134,6 +21881,38 @@ Transform:
   m_Father: {fileID: 7528523850160772256}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2044179335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850361174327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849927328343}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.03
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850361881326
 GameObject:
   m_ObjectHideFlags: 0
@@ -20336,6 +22115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850375957919}
+  - component: {fileID: 677748815}
   m_Layer: 8
   m_Name: TwinTail.E.002.L
   m_TagString: Untagged
@@ -20359,6 +22139,46 @@ Transform:
   m_Father: {fileID: 7528523849149674113}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &677748815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850375957918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849344554930}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850377397163
 GameObject:
   m_ObjectHideFlags: 0
@@ -20461,6 +22281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850384111442}
+  - component: {fileID: 388522983}
   m_Layer: 8
   m_Name: TwinTail.A.011.L
   m_TagString: Untagged
@@ -20484,6 +22305,46 @@ Transform:
   m_Father: {fileID: 7528523849496970370}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &388522983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850384111453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850470585088}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850386196811
 GameObject:
   m_ObjectHideFlags: 0
@@ -20550,6 +22411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850394063337}
+  - component: {fileID: 1465128560}
   m_Layer: 8
   m_Name: TwinTail.F.002.R
   m_TagString: Untagged
@@ -20573,6 +22435,46 @@ Transform:
   m_Father: {fileID: 7528523850863579365}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1465128560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850394063336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850049308813}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850394810140
 GameObject:
   m_ObjectHideFlags: 0
@@ -20645,6 +22547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850394810255}
+  - component: {fileID: 542906188}
   m_Layer: 8
   m_Name: TwinTail.C.001.L
   m_TagString: Untagged
@@ -20668,6 +22571,46 @@ Transform:
   m_Father: {fileID: 7528523850332437434}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542906188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850394810254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849206309293}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850395833085
 GameObject:
   m_ObjectHideFlags: 0
@@ -20889,6 +22832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850420126267}
+  - component: {fileID: 1815517838}
   m_Layer: 8
   m_Name: TwinTail.A.006.R
   m_TagString: Untagged
@@ -20912,6 +22856,38 @@ Transform:
   m_Father: {fileID: 7528523850766625464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1815517838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850420126266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850757628057}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850432031148
 GameObject:
   m_ObjectHideFlags: 0
@@ -20921,6 +22897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850432031149}
+  - component: {fileID: 1738709847}
   m_Layer: 8
   m_Name: TwinTail.D.007.L
   m_TagString: Untagged
@@ -20944,6 +22921,46 @@ Transform:
   m_Father: {fileID: 7528523850585857424}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738709847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850432031148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849609624253}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850435415773
 GameObject:
   m_ObjectHideFlags: 0
@@ -21148,6 +23165,12 @@ GameObject:
   - component: {fileID: 7528523850461614870}
   - component: {fileID: 7528523850461614865}
   - component: {fileID: 7528523850461614864}
+  - component: {fileID: 2854509610247980426}
+  - component: {fileID: 744233303788762008}
+  - component: {fileID: 1244477450001347417}
+  - component: {fileID: 9042377330280984594}
+  - component: {fileID: 283343102528708111}
+  - component: {fileID: 274598211}
   m_Layer: 8
   m_Name: HatsuneMikuNT_CandyRockStar
   m_TagString: Untagged
@@ -21171,6 +23194,7 @@ Transform:
   - {fileID: 7528523850827133284}
   - {fileID: 7528523849750022316}
   - {fileID: 8464566646595210245}
+  - {fileID: 4483314638565873952}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21184,7 +23208,7 @@ Animator:
   m_GameObject: {fileID: 7528523850461614867}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9c07cd4e1ef6a2a49a1c212c15237ef8, type: 3}
-  m_Controller: {fileID: 9100000, guid: ab31639c81fde744ea5a20b2f4e5390e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 34e5aa1415bacfd47b4bda1f86a8fa17, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -21401,6 +23425,75 @@ MonoBehaviour:
   - {fileID: 7528523850362786564}
   - {fileID: 7528523850969249410}
   - {fileID: 7528523850963951322}
+  - {fileID: 1187940745}
+  - {fileID: 2044179335}
+  - {fileID: 781797814}
+  - {fileID: 1453183003}
+  - {fileID: 1643891629}
+  - {fileID: 959305366}
+  - {fileID: 2143352707}
+  - {fileID: 723754573}
+  - {fileID: 799994912}
+  - {fileID: 1678001642}
+  - {fileID: 388522983}
+  - {fileID: 1589331544}
+  - {fileID: 1325440060}
+  - {fileID: 1056892034}
+  - {fileID: 463556983}
+  - {fileID: 772882089}
+  - {fileID: 1618400185}
+  - {fileID: 1691890783}
+  - {fileID: 1639614449}
+  - {fileID: 1893805408}
+  - {fileID: 2119063479}
+  - {fileID: 1196280112}
+  - {fileID: 1051646171}
+  - {fileID: 495088744}
+  - {fileID: 1599917264}
+  - {fileID: 586906672}
+  - {fileID: 1439615041}
+  - {fileID: 2087182206}
+  - {fileID: 2087182206}
+  - {fileID: 2087182206}
+  - {fileID: 542906188}
+  - {fileID: 1456388184}
+  - {fileID: 1692510788}
+  - {fileID: 487849829}
+  - {fileID: 292348166}
+  - {fileID: 1436830918}
+  - {fileID: 470196441}
+  - {fileID: 1225882501}
+  - {fileID: 983181240}
+  - {fileID: 814689417}
+  - {fileID: 1556160616}
+  - {fileID: 1738709847}
+  - {fileID: 1518994100}
+  - {fileID: 984076706}
+  - {fileID: 677748815}
+  - {fileID: 1757613146}
+  - {fileID: 1273758077}
+  - {fileID: 1273758077}
+  - {fileID: 1845948789}
+  - {fileID: 389730533}
+  - {fileID: 193790128}
+  - {fileID: 516325934}
+  - {fileID: 1891393802}
+  - {fileID: 1815517838}
+  - {fileID: 1744825157}
+  - {fileID: 243345846}
+  - {fileID: 924151908}
+  - {fileID: 924151908}
+  - {fileID: 2113849233}
+  - {fileID: 1265917029}
+  - {fileID: 1664832216}
+  - {fileID: 338415965}
+  - {fileID: 1586416937}
+  - {fileID: 1586416937}
+  - {fileID: 1465128560}
+  - {fileID: 769404626}
+  - {fileID: 1777198345}
+  - {fileID: 486705699}
+  - {fileID: 504143820}
 --- !u!114 &7528523850461614865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21444,6 +23537,340 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 1dbe5e2a2ace61c4c822fb3bae4134e7, type: 2}
   delayWeight: 0.3
   isKeepFace: 0
+--- !u!82 &2854509610247980426
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850461614867}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 52021b8d615c74750b2df74afb897b09, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &744233303788762008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850461614867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43c520a9bad8a3489109c869f454576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  provider: 1
+  enableAcceleration: 1
+  enableKeyboardInput: 0
+  enableTouchInput: 0
+  audioLoopback: 0
+  loopbackKey: 108
+  showVisemes: 0
+  debugVisemesKey: 100
+  skipAudioSource: 0
+  gain: 1
+  debugLaughterKey: 104
+  showLaughter: 0
+  laughterScore: 0
+--- !u!114 &1244477450001347417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850461614867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b97b38f2f1fd24185315141a6c6a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinnedMeshRenderer: {fileID: 7528523850827133287}
+  visemeToBlendTargets: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  enableVisemeTestKeys: 1
+  visemeTestKeys: 600000000900000071000000770000006500000072000000740000007900000075000000690000006f000000700000005b0000005d0000005c000000
+  laughterKey: 301
+  laughterBlendTarget: 15
+  laughterThreshold: 0.5
+  laughterMultiplier: 1.5
+  smoothAmount: 70
+--- !u!114 &9042377330280984594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850461614867}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc30a49f30010eb42a8b59ec685eac57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 5290b3a55eaa1b7458665dc2d856c042, type: 2}
+  Textures:
+  - {fileID: 2800000, guid: 46b2920291e9b8c4888ad3fe3f5e5e69, type: 3}
+  - {fileID: 2800000, guid: bea5b996ab6235c4aaa1be9b11aea8c4, type: 3}
+  - {fileID: 2800000, guid: 5563aa34057c347499c480ea33c5d593, type: 3}
+  - {fileID: 2800000, guid: d14bb80824ed25b44a65ddfc7f591e29, type: 3}
+  - {fileID: 2800000, guid: ffbd7db31d3ad6e4a97a2f312babdcb6, type: 3}
+  - {fileID: 2800000, guid: ba0b9f69af91c5f46b490346e5552136, type: 3}
+  - {fileID: 2800000, guid: 5e6531e8f56b42547b8d2ddf7a7363d1, type: 3}
+  - {fileID: 2800000, guid: 31e6326c0bd6143479322c5b4a5fe949, type: 3}
+  - {fileID: 2800000, guid: 9c21cf8c4dffca9418cebd0a578972b4, type: 3}
+  - {fileID: 2800000, guid: 6d47a54f2b89a59459fd7561d360bab2, type: 3}
+  - {fileID: 2800000, guid: 5c06354455999f94ea26114e261dde6d, type: 3}
+  - {fileID: 2800000, guid: 29a06a0eefee1b542a7c286f1689ffab, type: 3}
+  - {fileID: 2800000, guid: ad60c8114191fdf41aa0ea64e132add9, type: 3}
+  - {fileID: 2800000, guid: 5f658e6e48970d340b4491a5fc959251, type: 3}
+  - {fileID: 2800000, guid: 660be1fdb8590b14bab012a991bdeb86, type: 3}
+  smoothAmount: 70
+--- !u!114 &283343102528708111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850461614867}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d5ed157083b494e85013bad8fd5e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  enableMicSelectionGUI: 1
+  micSelectionGUIKey: 109
+  micInputVolume: 100
+  micFrequency: 48000
+  micControl: 2
+  micActivationKey: 32
+  selectedDevice: 
+--- !u!114 &274598211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850461614867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbcb8f64d6a7a640a973b2df934eb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextEdgeMaterial_Pass4: {fileID: 0}
+  nextEdgeMaterial_Pass8: {fileID: 0}
+  nextEdgePass: 0
+  nextEdgeSize: 1
+  nextEdgeColor: {r: 0.4, g: 1, b: 1, a: 1}
+  supportNEXTEdge: 0
+  importScale: 0.01
+  initializeOnAwake: 0
+  postfixRenderQueue: 1
+  renderQueueAfterSkybox: 0
+  updateWhenOffscreen: 1
+  animEnabled: 1
+  animSyncToAudio: 1
+  modelFile: {fileID: 0}
+  indexFile: {fileID: 0}
+  vertexFile: {fileID: 0}
+  audioSource: {fileID: 0}
+  animDelayedAwakeFrame: 1
+  boneInherenceEnabled: 0
+  boneMorphEnabled: 0
+  pphEnabled: 1
+  pphEnabledNoAnimation: 1
+  pphShoulderEnabled: 1
+  pphShoulderFixRate: 0.7
+  ikEnabled: 0
+  fullBodyIKEnabled: 0
+  vertexMorphEnabled: 1
+  materialMorphEnabled: 1
+  blendShapesEnabled: 1
+  xdefEnabled: 0
+  xdefNormalEnabled: 0
+  xdefMobileEnabled: 0
+  generatedColliderMargin: 0.01
+  tessEnabled: 1
+  tessEdgeLengthRate: 1
+  tessPhongStrengthRate: 1
+  tessExtrusionAmountRate: 1
+  physicsEngine: 0
+  bulletPhysics:
+    joinLocalWorld: 1
+    useOriginalScale: 1
+    useCustomResetTime: 0
+    resetMorphTime: 1.8
+    resetWaitTime: 1.2
+    worldProperty:
+      accurateStep: 1
+      framePerSecond: 0
+      resetFrameRate: 0
+      limitDeltaFrames: 0
+      axisSweepDistance: 0
+      gravityScale: 10
+      gravityNoise: 0
+      gravityDirection: {x: 0, y: -1, z: 0}
+      vertexScale: 8
+      importScale: 0.01
+      worldSolverInfoNumIterations: 0
+      worldSolverInfoSplitImpulse: 1
+      worldAddFloorPlane: 0
+      optimizeSettings: 1
+      multiThreading: 1
+      multiThreadingSynchronize: 1
+      parallelDispatcher: 0
+      parallelSolver: 0
+    mmdModelProperty:
+      worldScale: 0
+      importScale: 0
+      lossyScale: {x: 1, y: 1, z: 1}
+      keepIKTargetBoneFlag: -1
+      forceIKResetBoneFlag: -1
+      enableIKSecondPassFlag: -1
+      secondPassLimitAngle: -1
+      enableIKInnerLockFlag: -1
+      enableIKInnerLockKneeFlag: -1
+      innerLockKneeClamp: -1
+      innerLockKneeRatioL: -1
+      innerLockKneeRatioU: -1
+      innerLockKneeScale: -1
+      enableIKMuscleFlag: -1
+      enableIKMuscleHipFlag: -1
+      enableIKMuscleFootFlag: -1
+      muscleHipUpperXAngle: -1
+      muscleHipLowerXAngle: -1
+      muscleHipInnerYAngle: -1
+      muscleHipOuterYAngle: -1
+      muscleHipInnerZAngle: -1
+      muscleHipOuterZAngle: -1
+      muscleFootUpperXAngle: -1
+      muscleFootLowerXAngle: -1
+      muscleFootInnerYAngle: -1
+      muscleFootOuterYAngle: -1
+      muscleFootInnerZAngle: -1
+      muscleFootOuterZAngle: -1
+      rigidBodyIsAdditionalDamping: 1
+      rigidBodyIsEnableSleeping: 0
+      rigidBodyIsUseCcd: 1
+      rigidBodyCcdMotionThreshold: 0.1
+      rigidBodyShapeScale: 1
+      rigidBodyMassRate: 1
+      rigidBodyLinearDampingRate: 1
+      rigidBodyAngularDampingRate: 1
+      rigidBodyRestitutionRate: 1
+      rigidBodyFrictionRate: 1
+      rigidBodyAntiJitterRate: 1
+      rigidBodyAntiJitterRateOnKinematic: 1
+      rigidBodyPreBoneAlignmentLimitLength: 0.01
+      rigidBodyPreBoneAlignmentLossRate: 0.01
+      rigidBodyPostBoneAlignmentLimitLength: 0.01
+      rigidBodyPostBoneAlignmentLossRate: 0.01
+      rigidBodyLinearDampingLossRate: -1
+      rigidBodyLinearDampingLimit: -1
+      rigidBodyAngularDampingLossRate: -1
+      rigidBodyAngularDampingLimit: -1
+      rigidBodyLinearVelocityLimit: -1
+      rigidBodyAngularVelocityLimit: -1
+      rigidBodyIsUseForceAngularVelocityLimit: 1
+      rigidBodyIsUseForceAngularAccelerationLimit: 1
+      rigidBodyForceAngularVelocityLimit: 600
+      rigidBodyIsAdditionalCollider: 0
+      rigidBodyAdditionalColliderBias: 0.99
+      rigidBodyIsForceTranslate: 1
+      jointRootAdditionalLimitAngle: -1
+      jointAdditionalLimitAngle: -1
+      jointAdditionalLimitForcibly: 0
+  rigidBodyList: []
+  animList: []
+  editorViewPage: 1
+  editorViewMorphBits: 15
+  editorViewRigidBodies: 0
+  editorViewMorphNameType: 0
 --- !u!1 &7528523850470585091
 GameObject:
   m_ObjectHideFlags: 0
@@ -21453,6 +23880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850470585088}
+  - component: {fileID: 1589331544}
   m_Layer: 8
   m_Name: TwinTail.A.012.L
   m_TagString: Untagged
@@ -21476,6 +23904,46 @@ Transform:
   m_Father: {fileID: 7528523850384111442}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589331544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850470585091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850358799956}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850472222153
 GameObject:
   m_ObjectHideFlags: 0
@@ -22224,6 +24692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850585857424}
+  - component: {fileID: 1556160616}
   m_Layer: 8
   m_Name: TwinTail.D.006.L
   m_TagString: Untagged
@@ -22247,6 +24716,46 @@ Transform:
   m_Father: {fileID: 7528523848919586063}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1556160616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850585857427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850432031149}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850593550082
 GameObject:
   m_ObjectHideFlags: 0
@@ -22319,6 +24828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850608470241}
+  - component: {fileID: 1691890783}
   m_Layer: 8
   m_Name: TwinTail.F.005.L
   m_TagString: Untagged
@@ -22342,6 +24852,46 @@ Transform:
   m_Father: {fileID: 7528523850830085538}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1691890783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850608470240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850047320430}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850616835520
 GameObject:
   m_ObjectHideFlags: 0
@@ -27886,6 +30436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850752728220}
+  - component: {fileID: 486705699}
   m_Layer: 8
   m_Name: TwinTail.F.005.R
   m_TagString: Untagged
@@ -27909,6 +30460,46 @@ Transform:
   m_Father: {fileID: 7528523849621390415}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486705699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850752728223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849364674035}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850753113033
 GameObject:
   m_ObjectHideFlags: 0
@@ -28045,6 +30636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850757628057}
+  - component: {fileID: 1744825157}
   m_Layer: 8
   m_Name: TwinTail.A.007.R
   m_TagString: Untagged
@@ -28069,6 +30661,46 @@ Transform:
   m_Father: {fileID: 7528523850420126267}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1744825157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850757628056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849677395418}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850763883414
 GameObject:
   m_ObjectHideFlags: 0
@@ -28141,6 +30773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850766625464}
+  - component: {fileID: 1891393802}
   m_Layer: 8
   m_Name: TwinTail.A.005.R
   m_TagString: Untagged
@@ -28164,6 +30797,38 @@ Transform:
   m_Father: {fileID: 7528523849070457586}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891393802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850766625467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850420126267}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850766891802
 GameObject:
   m_ObjectHideFlags: 0
@@ -28480,6 +31145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850818458617}
+  - component: {fileID: 292348166}
   m_Layer: 8
   m_Name: TwinTail.C.005.L
   m_TagString: Untagged
@@ -28503,6 +31169,46 @@ Transform:
   m_Father: {fileID: 7528523849155517244}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &292348166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850818458616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850723101498}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850818988869
 GameObject:
   m_ObjectHideFlags: 0
@@ -29080,6 +31786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850830085538}
+  - component: {fileID: 1618400185}
   m_Layer: 8
   m_Name: TwinTail.F.004.L
   m_TagString: Untagged
@@ -29103,6 +31810,46 @@ Transform:
   m_Father: {fileID: 7528523850019714958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1618400185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850830085549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850608470241}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850830540936
 GameObject:
   m_ObjectHideFlags: 0
@@ -29112,6 +31859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850830540937}
+  - component: {fileID: 463556983}
   m_Layer: 8
   m_Name: TwinTail.F.002.L
   m_TagString: Untagged
@@ -29135,6 +31883,46 @@ Transform:
   m_Father: {fileID: 7528523849855733422}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463556983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850830540936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850019714958}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850839014181
 GameObject:
   m_ObjectHideFlags: 0
@@ -29326,6 +32114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850850923868}
+  - component: {fileID: 2087182206}
   m_Layer: 8
   m_Name: TwinTail.B.009.L
   m_TagString: Untagged
@@ -29349,6 +32138,46 @@ Transform:
   m_Father: {fileID: 7528523849640783542}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2087182206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850850923871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849509353983}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850851090476
 GameObject:
   m_ObjectHideFlags: 0
@@ -29483,6 +32312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850863579365}
+  - component: {fileID: 1586416937}
   m_Layer: 8
   m_Name: TwinTail.F.001.R
   m_TagString: Untagged
@@ -29506,6 +32336,46 @@ Transform:
   m_Father: {fileID: 7528523850757628057}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1586416937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850863579364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523850394063337}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850863779769
 GameObject:
   m_ObjectHideFlags: 0
@@ -29873,6 +32743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850923170746}
+  - component: {fileID: 1436830918}
   m_Layer: 8
   m_Name: TwinTail.D.001.L
   m_TagString: Untagged
@@ -29896,6 +32767,46 @@ Transform:
   m_Father: {fileID: 7528523850332437434}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1436830918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850923170373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849085294915}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850926254865
 GameObject:
   m_ObjectHideFlags: 0
@@ -30347,6 +33258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7528523850989489038}
+  - component: {fileID: 1692510788}
   m_Layer: 8
   m_Name: TwinTail.C.003.L
   m_TagString: Untagged
@@ -30370,6 +33282,46 @@ Transform:
   m_Father: {fileID: 7528523849206309293}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1692510788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528523850989489033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7528523849155517244}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.02
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders:
+  - {fileID: 7528523850513363035}
+  - {fileID: 7528523850578626255}
+  - {fileID: 7528523849372161220}
+  - {fileID: 7528523850190735327}
+  - {fileID: 7528523848981330010}
+  - {fileID: 7528523849404671567}
+  - {fileID: 7528523849930324265}
+  - {fileID: 7528523850064646776}
+  - {fileID: 7528523850634734116}
+  - {fileID: 7528523849975433894}
+  - {fileID: 7528523850297448335}
+  - {fileID: 7528523849485901603}
+  - {fileID: 7528523849894835757}
+  - {fileID: 7528523849752496749}
+  - {fileID: 7528523850146523833}
+  - {fileID: 7528523849303044004}
+  - {fileID: 7528523849806735020}
+  - {fileID: 7528523849239692548}
+  debug: 1
+  threshold: 0.01
 --- !u!1 &7528523850996259208
 GameObject:
   m_ObjectHideFlags: 0
