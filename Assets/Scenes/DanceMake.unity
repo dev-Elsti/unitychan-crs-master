@@ -344,6 +344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CandyRockStar
       objectReference: {fileID: 0}
+    - target: {fileID: 100378, guid: 44374dd563c03d64aaff55a08495dd9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400378, guid: 44374dd563c03d64aaff55a08495dd9f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -529,6 +533,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: HatsuneMikuNT_CandyRockStar
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 274598211, guid: f799b82aab220aa49a3f894f9ab10d28, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f799b82aab220aa49a3f894f9ab10d28, type: 3}
